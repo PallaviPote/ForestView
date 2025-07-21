@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest Retreat - Room Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Forest Retreat</div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            &#9776; <!-- Hamburger Icon -->
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#booking">Book Now</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <img src="images/forest-hotel.jpg" alt="Forest Hotel View">
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are a hotel property launched in July 2024 in the heart of Nanded City. We have standard and deluxe rooms for a comfortable and affordable price with a view of the Khadakwasla dam, the mighty Sahyadri range and the Sudan Block of NDA..Forest Retreat offers a peaceful escape into nature with comfortable rooms, tree houses, and luxury tents. Surrounded by lush greenery, we provide the perfect getaway for relaxation and adventure.</p>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <img src="images/gallery1.jpg" alt="Forest View 1">
+            <img src="images/gallery2.jpg" alt="Forest View 2">
+            <img src="images/gallery3.jpg" alt="Forest View 3">
+        </div>
+        <!-- <div class="video"> -->
+            <!-- <video controls width="100%"> -->
+                <!-- <source src="images/forest-video.mp4" type="video/mp4"> -->
+                <!-- Your browser does not support the video tag. -->
+            <!-- </video> -->
+        <!-- </div> -->
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@forestretreat.com</p>
+        <p>Phone: +91-9876543210</p>
+        <p>Address: Near Green Valley, Forest Hill Road</p>
+    </section>
+
+    <section id="booking" class="booking-form">
+        <h2>Book Your Stay</h2>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="room">Room Type:</label>
+            <select id="room" name="room">
+                <option value="forest-view">Forest View Room</option>
+                <option value="tree-house">Tree House</option>
+                <option value="luxury-tent">Luxury Tent</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Forest Retreat. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const toggleButton = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+
+</body>
+</html>
